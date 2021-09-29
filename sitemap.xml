@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://magnus.morton.ai/posts/delayrepay/</loc>
+    <lastmod>2021-01-20T21:12:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/</loc>
+    <lastmod>2021-01-20T21:12:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/posts/</loc>
+    <lastmod>2021-01-20T21:12:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/posts/new-site/</loc>
+    <lastmod>2020-11-22T14:38:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/about/</loc>
+    <lastmod>1970-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://magnus.morton.ai/tags/</loc>
+  </url>
+  
+</urlset>

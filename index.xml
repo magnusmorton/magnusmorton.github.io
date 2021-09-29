@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Magnus Morton</title>
+    <link>https://magnus.morton.ai/</link>
+    <description>Recent content on Magnus Morton</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Wed, 20 Jan 2021 21:12:07 +0000</lastBuildDate><atom:link href="https://magnus.morton.ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DelayRepay</title>
+      <link>https://magnus.morton.ai/posts/delayrepay/</link>
+      <pubDate>Wed, 20 Jan 2021 21:12:07 +0000</pubDate>
+      
+      <guid>https://magnus.morton.ai/posts/delayrepay/</guid>
+      <description>We presented DelayRepay: Delayed Execution for Kernel Fusion in Python at the Dynamic Languages Symposium 2020. DLS was supposed to be in Chicago, but alas.
+The long and short of the paper is that if we trace calls on a NumPy array and delay the execution until needed, we can fuse these calls together when we execute them on a GPU, resulting in improved performance.
+I&amp;rsquo;ll include the abstract:
+ Python is a popular, dynamic language for data science and scientific computing.</description>
+    </item>
+    
+    <item>
+      <title>Yet Another New Site</title>
+      <link>https://magnus.morton.ai/posts/new-site/</link>
+      <pubDate>Sun, 22 Nov 2020 14:38:27 +0000</pubDate>
+      
+      <guid>https://magnus.morton.ai/posts/new-site/</guid>
+      <description>Here&amp;rsquo;s another new site again.
+Why have you done this? I bought a new domain, and thought it was time to update my personal brand&amp;hellip;
+What&amp;rsquo;s with the .ai domain? I wanted a morton.tld vanity domain, to avoid redundancy in email addresses. morton.ai was the only one available on an appropriate tld that was not extortionately expensive. I can pretend I&amp;rsquo;m a hip ML researcher now.
+How is the site built?</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://magnus.morton.ai/about/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://magnus.morton.ai/about/</guid>
+      <description>I am a Research Associate at the School of Informatics at the University of Edinburgh, working in the Compiler and Architecture Design Group within the Institute for Computing Systems Architecture. I&amp;rsquo;m currently looking at Data-Centric Parallisation - automatic parallelisation by analysing and abstracting a program&amp;rsquo;s data structures.</description>
+    </item>
+    
+  </channel>
+</rss>

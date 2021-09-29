@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DelayRepay &middot; Magnus Morton</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://magnus.morton.ai/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://magnus.morton.ai/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://magnus.morton.ai/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://magnus.morton.ai/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-08 ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://magnus.morton.ai/"><h1>Magnus Morton</h1></a>
+      <p class="lead">
+       Postdoctoral Compiler Wrangler 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://magnus.morton.ai/">Home</a> </li>
+        <li><a href="/about"> About </a></li><li><a href="/index.xml"> Feed </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>DelayRepay</h1>
+  <time datetime=2021-01-20T21:12:07Z class="post-date">Wed, Jan 20, 2021</time>
+  <p>We presented <em>DelayRepay: Delayed Execution for Kernel Fusion in Python</em> at the Dynamic Languages Symposium 2020. DLS was supposed to be in Chicago, but alas.</p>
+<p>The long and short of the paper is that if we trace calls on a NumPy array and
+delay the execution until needed, we can fuse these calls together when we
+execute them on a GPU, resulting in improved performance.</p>
+<p>I&rsquo;ll include the abstract:</p>
+<blockquote>
+<p>Python is a popular, dynamic language for data science and scientific computing.
+To ensure efficiency, significant numerical libraries are implemented in static native languages.
+However, performance suffers when switching between native and non-native code, especially if data has to be converted between native arrays and Python data structures.
+As GPU accelerators are increasingly used, this problem becomes particularly acute.
+Data and control has to be repeatedly transferred between the accelerator and the host.</p>
+<p>In this paper, we present DelayRepay, a delayed execution framework for numeric Python programs.
+It avoids excessive switching and data transfer by using lazy evaluation and kernel fusion.
+Using DelayRepay, operations on NumPy arrays are executed lazily, allowing multiple calls to accelerator kernels to be fused together dynamically.
+DelayRepay is available as a drop-in replacement for existing Python libraries.
+This approach enables significant performance improvement over the state-of-the-art and is invisible to the application programmer.
+We show that our approach provides a maximum 377x speedup over NumPy - a
+409% increase over the state of the art.</p>
+</blockquote>
+<p>This work was focused on GPUs - we didn&rsquo;t check if this approach helped with
+vanilla NumPy on CPU. I suspect that a very naïve implementation might see a
+benefit from warm caches, but probably not much. I have thought of a few tricks
+that might help, we&rsquo;ll see.</p>
+<p>DelayRepay is free and open source, and is available on
+<a href="https://git.sr.ht/~magnusmorton/delayrepay">sourcehut</a>. The paper is available
+here:
+<a href="https://doi.org/10.1145/3426422.3426980">https://doi.org/10.1145/3426422.3426980</a>,
+along with a video presentation.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
