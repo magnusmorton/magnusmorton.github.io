@@ -30,7 +30,7 @@ many plugins are available).  Adding, changing, and removing pairs of tags
 simultaneously is a breeze.
 
 %prep
-%setup -q
+%autosetup
 
 %build
 
